@@ -1,0 +1,35 @@
+import SmartDepend from '../Dep/SmartDepend';
+
+TEMP_IMPORT_LIST_ALL
+
+
+
+class ControlContainer {
+  private _smartDepend: SmartDepend;
+
+  TEMP_DECLARATIONS
+
+  constructor(globalState: any = null) {
+    this._smartDepend = new SmartDepend(globalState);
+
+    this._addModules();
+    this._addDepends();
+  }
+
+  public getMain(): NoireLibre {
+    let spEntity = <NoireLibre>this._smartDepend.resolve(this._NoireLibre);
+
+    return spEntity;
+  }
+
+  private _addModules() {
+    TEMP_ADDMODULES
+  }
+
+  private _addDepends() {
+    TEMP_ADDDEPENDS
+  }
+
+}
+
+export default ControlContainer;

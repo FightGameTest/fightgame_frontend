@@ -1,0 +1,19 @@
+.table_friendlist {
+  @apply min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700;
+}
+
+.tbody_friendlist {
+  @apply bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700;
+}
+
+.friend_status {
+  @apply dark:text-white inline;
+}
+
+.friendname {
+  @apply font-daydream;
+}
+
+.friendlocation {
+  @apply font-m5x7;
+}

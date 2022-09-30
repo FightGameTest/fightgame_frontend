@@ -1,0 +1,12 @@
+.button {
+  @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full block
+    cursor-pointer;
+}
+
+.header {
+  @apply font-daydream text-2xl;
+}
+
+.body_text {
+  @apply font-m5x7 text-2xl p-1;
+}

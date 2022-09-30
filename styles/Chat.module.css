@@ -1,0 +1,77 @@
+.chatbox {
+    width: 40%;
+    z-index: 10;
+    position: fixed;
+    bottom:  0;
+    left:  0;
+    
+}
+
+.chatContainer {
+    display: flex;
+}
+
+.sidebar {
+    width: 40px;
+    background-color: brown;
+}
+
+.tab {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color:  white;
+    text-align: center;
+}
+
+
+.tabSelected {
+    margin-left: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color:  red;
+    text-align: center;
+    font-size: 120%;
+}
+
+.chatregion {
+    width: 100%;
+    background-color: beige;
+}
+
+.chatnav {
+    width: 100%;
+    height: 20px;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.tabnav {
+    width: 100%;
+    display: flex;
+}
+
+.chatButton {
+    height: 40px;
+    width: 40px;
+    margin-top: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.textBox {
+    width: 100%;
+    height: 20px;
+    background-color: cornflowerblue;
+    color:rgb(255, 255, 255);
+}
+
+.chatArea {
+    height: 400px;
+    background-color: beige;
+    width: 100%;
+    overflow-y: auto;
+}
