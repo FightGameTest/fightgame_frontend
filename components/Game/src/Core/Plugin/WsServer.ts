@@ -6,7 +6,7 @@ class WsServer {
 
     constructor() {
         if (window.location.hostname != "localhost" && !window.location.hostname.includes("local.fightgame")) {
-            this._baseUrl = "fightgame.asia"; //use production url here
+            this._baseUrl = "68.183.44.228:3000"; //use production url here
         } else {
             this._baseUrl = "localhost" + ":5000";
         }
