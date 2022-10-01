@@ -53,12 +53,8 @@ class WsServer {
 
             this._ws.addEventListener('message', (e : any) => {
                 
-                setTimeout(() => {
-                    //console.log("Payload <receive>: ", JSON.parse(e.data));
-
-                    let data = JSON.parse(e.data)
+                let data = JSON.parse(e.data)
                     onMessage(data);
-                }, 5);
             })
         })
     }
@@ -67,10 +63,7 @@ class WsServer {
         if (this._ws) {
             
 
-            setTimeout(() => {
-                    //console.log("Payload <send>: ", payload);
-                    this._ws?.send(JSON.stringify(payload));
-            }, 5);
+            this._ws?.send(JSON.stringify(payload));
 
         } else {
             console.error("Server can't send data before starting!");
