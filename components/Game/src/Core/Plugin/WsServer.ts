@@ -19,13 +19,13 @@ class WsServer {
     public async startServer(onMessage : Function) : Promise<number> {
         let url = "http://" + this._baseUrl + "/join_game";
 
-        if (!this._baseUrl.includes('localhost')) url = "https://" + this._baseUrl + "/join_game";
+        if (!this._baseUrl.includes('localhost')) url = "http://" + this._baseUrl + "/join_game";
 
         return new Promise(async (resolve : Function, reject : Function) => {
             let wssUrl = await this._httpGetAsync(url);
             wssUrl = "ws://" + this._baseUrl + wssUrl;
 
-            if (!this._baseUrl.includes('localhost')) wssUrl = wssUrl.replace("ws://", "wss://");
+            if (!this._baseUrl.includes('localhost')) wssUrl = wssUrl.replace("ws://", "ws://");
 
             //let ws: any = new WebSocket(wssUrl);
 
